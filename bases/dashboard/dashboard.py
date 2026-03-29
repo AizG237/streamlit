@@ -31,16 +31,16 @@ kpi3.metric(label="Balance $", value=f"${round(balance, 2)}")
 #GRAPHIQUES
 col1, col2 = st.columns(2)
 with col1 : 
-st.markdown("### FIRST CHART")
-fig1 = plt.figure()
-sns.barplot(data=df, x="marital", y="age",palette="viridis")
-st.pyplot(fig1)
-    
+    st.markdown("### FIRST CHART")
+    fig1 = plt.figure()
+    sns.barplot(data=df, x="marital", y="age",palette="viridis")
+    st.pyplot(fig1)
+        
 with col2 :
-st.markdown("### SECOND CHART")
-fig2 = plt.figure()
-sns.histplot(data=df,x="age")
-st.pyplot(fig2)
+    st.markdown("### SECOND CHART")
+    fig2 = plt.figure()
+    sns.histplot(data=df,x="age")
+    st.pyplot(fig2)
     
 st.markdown("### DETAILLED DATA VIEW")
 st.dataframe(df)
