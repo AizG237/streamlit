@@ -8,7 +8,7 @@ import seaborn as sns
 #if uploaded_file :  
     
 #df = pd.read_csv(uploaded_file)
-df = pd.read_csv("bank.csv")
+df = pd.read_csv("bases/dashboard/bank.csv")
 st.set_page_config(page_title="Real time Science Dashboard", page_icon=":bar_chart:", layout="wide")
     
 st.title("Real Time/Live DataAnalysisi")
