@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 uploaded_file = st.file_uploader("Choose a file", type="csv")
-  if uploaded_file :  
+if uploaded_file :  
     df = pd.read_csv(uploaded_file)
     st.set_page_config(page_title="Real time Science Dashboard", page_icon=":bar_chart:", layout="wide")
     
