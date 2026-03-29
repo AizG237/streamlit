@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv("")
+df = pd.read_csv('data.csv')
 st.set_page_config(page_title="Real time Science Dashboard", page_icon=":bar_chart:", layout="wide")
 
 st.title("Real Time/Live DataAnalysisi")
