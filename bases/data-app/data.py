@@ -19,5 +19,6 @@ if uploaded_file:
         sns.scatterplot(data=df,x='EstimatedSalary',y='Age',hue='Purchased')
     with col2:
         fig2 = plt.figure()
+        st.subheader("Distribution of Age")
         sns.histplot(df.Age)
         st.pyplot(fig2)
